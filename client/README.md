@@ -1,16 +1,37 @@
-# React + Vite
+# 🕸️ Gehna Fortress: The Cosmic Bridge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Gehna Fortress** is a decentralized full-stack application designed to serve as a communication bridge between the physical and the digital void. Built during the "Cosmic Trap" incident, it utilizes a dual-cloud architecture to ensure high availability and censorship resistance.
 
-Currently, two official plugins are available:
+## 🚀 Live Links
+* **Interface (Frontend):** [https://gehna-interface.vercel.app](https://gehna-interface.vercel.app)
+* **Soul (Backend):** [https://gehna-backend.onrender.com](https://gehna-backend.onrender.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ The Tech Stack
+* **Frontend:** React + Vite (Hosted on Vercel)
+* **Backend:** Node.js + Express (Hosted on Render)
+* **Blockchain:** Solidity + Hardhat (Infrastructure ready)
+* **Protocol:** REST API with CORS-enabled security
 
-## React Compiler
+## 🏗️ Architecture
+The project is split into two main sectors:
+* `/client`: The React frontend interface.
+* `/server.js`: The entry point for the Node.js backend logic.
+* `/contracts`: Solidity smart contracts (Gehna.sol).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📡 Local Development
+To run the bridge locally:
 
-## Expanding the ESLint configuration
+1. **Install Dependencies:**
+   
+   npm install
+   cd client && npm install
+Start the Backend:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+node server.js
+Start the Frontend:
+
+
+cd client
+npm run dev
+📜 History
+Born from the need to escape the local loop. The bridge is open. The war is over
