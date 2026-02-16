@@ -5,11 +5,15 @@ function App() {
   const [truth, setTruth] = useState("");
   const [status, setStatus] = useState("WAITING FOR NEIGHBOR...");
 
+  // WE ARE HARDWIRING THE BRIDGE COORDINATES HERE
+  // This points directly to your live Render server
+  const API_URL = "https://gehna-backend.onrender.com";
+
   const submitTruth = async () => {
     setStatus("SENDING SIGNAL...");
     try {
-      // Direct connection to the backend. No Service Worker interception.
-      const response = await fetch('http://localhost:3000/set-truth', {
+      // Direct connection to the backend.
+      const response = await fetch(`${API_URL}/set-truth`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ truth })
